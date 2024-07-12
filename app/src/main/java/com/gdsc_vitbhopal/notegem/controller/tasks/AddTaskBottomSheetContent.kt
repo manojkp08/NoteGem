@@ -2,6 +2,7 @@ package com.gdsc_vitbhopal.notegem.controller.tasks
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.util.Log
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -182,6 +183,7 @@ fun AddTaskBottomSheetContent(
             shape = RoundedCornerShape(25.dp),
             modifier = Modifier.fillMaxWidth()
         )
+        Spacer(Modifier.height(12.dp))
         Button(
             onClick = {
                 onAddTask(
